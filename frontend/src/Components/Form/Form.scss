@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Inconsolata');
+$beige: #FF0;
+$pink : #333;
+
+.form-container {
+    height: 70vh;
+}
+
+.rules,
+.app,
+.form-container {
+    display: flex;
+    justify-content: center;
+}
+
+.form-container {
+    background-color: $pink;
+    flex-direction: column;
+    
+    align-items: center;
+    ul {
+        padding: 0;
+    }
+
+    li {
+        color: $beige;
+        letter-spacing: 1px;
+        font-weight: 300;
+        font-size: 16px;
+        margin: 5px;
+    }
+
+    .passed {
+        color: rgba(white, 0.3);
+        transition: 0.4s all;
+        text-decoration: line-through;
+    }
+
+    .missing {
+        color: $beige;
+        transition: 0.4s all;
+    }
+}
+
+.form-container{
+    .rules {
+        width: 330px;
+    }
+    
+    input,
+    button {
+        border: none;
+        outline: none;
+    }
+    
+    input {
+        background: none;
+        width: 260px;
+        border-bottom: 3px solid $beige;
+        color: white;
+        font-size: 27px;
+        transition: 0.4s all;
+        text-align: center;
+    
+        &:focus {
+            width: 330px;
+            transition: 0.4s all;
+        }
+    }
+    
+    ::placeholder {
+        color: rgba(white, 0.4);
+        ;
+    }
+    
+    button {
+        background: #73DE0A;
+        width: 150px;
+        height: 40px;
+        color: white;
+        font-size: 24px;
+        border-radius: 4px;
+        transition: 0.4s all;
+        cursor: pointer;
+        font-weight: bold;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    
+        &:disabled {
+            opacity: 0.7;
+            transition: 0.4s all;
+            cursor: not-allowed;
+            pointer-events: all !important;
+            &:hover {
+                animation: 500ms shake;
+            }
+        }
+    
+        &:hover {
+            animation: 500ms nod infinite;
+        }
+    }
+    
+    @keyframes shake {
+        0% {
+            transform: rotate(2deg);
+        }
+    
+        50% {
+            transform: rotate(-3deg);
+        }
+    
+        70% {
+            transform: rotate(3deg);
+        }
+    
+        100% {
+            transform: rotate(0deg);
+        }
+    }
+    
+    @keyframes nod {
+        0% {
+            transform: translateY(0);
+        }
+    
+        50% {
+            transform: translateY(2px);
+        }
+    
+        100% {
+            transform: translateY(0px);
+        }
+    }
+}

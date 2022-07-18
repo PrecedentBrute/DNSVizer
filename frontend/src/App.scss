@@ -1,0 +1,21 @@
+.footfooter{
+    background-color: #111;
+    height: 10vh;
+    color: white;
+    font-weight: bold;
+    font-size: 1.3rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #FF0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+body{
+    font-family: poppins !important;
+}

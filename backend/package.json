@@ -1,0 +1,23 @@
+{
+  "name": "nodemon",
+  "version": "1.0.0",
+  "engines" : {
+    "node" : "16.14.2"
+  },
+  "description": "",
+  "main": "'server copy.js'",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "nodemon 'server copy.js'"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "fastify": "^3.28.0",
+    "fastify-cors": "^6.0.3",
+    "knex": "^0.13.0",
+    "mysql": "git://github.com/mysqljs/mysql#e3e123e9af7c0829a6c1417d911572a75b4a5f95",
+    "nodemon": "^2.0.15"
+  }
+}
